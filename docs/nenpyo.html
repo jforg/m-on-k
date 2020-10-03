@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>年表デモ</title>
+<meta name="viewport" content="width=device-width">
+<style>
+html {
+	font: 100%/1.75 "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+body {
+	margin: 1em;
+}
+body > div {
+	max-width: 640px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+details {
+	padding: 1em;
+	border: 1px dotted #999;
+	border-radius: 4px;
+}
+summary + ul > li {
+	display: inline-block;
+}
+h1 {
+	margin: 0 0 .5em;
+	font-size: 2em;
+	line-height: 1.375;
+}
+main {
+	background-image: linear-gradient(to right, #fff, #fff calc(4.5em - 5px), #999 calc(4.5em - 5px), #999 calc(4.5em - 3px), #fff calc(4.5em - 3px), #fff);
+}
+h2 {
+	position: sticky;
+	top: 0;
+	margin: 1.6em 0 0;
+	font-size: 1.25em;
+}
+h2 > span {
+	display: inline-block;
+	background: #fff;
+	color: #b00000;
+}
+dl {
+	display: grid;
+	grid-template-columns: 5em 1fr;
+	grid-gap: 1em 0;
+	gap: 1em 0;
+	margin: 1em 0;
+}
+dt {
+	display: flex;
+	align-self: start;
+	align-items: center;
+	padding-right: .5em;
+}
+dt::after {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	margin-left: auto;
+	border: 2px solid;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+}
+dd {
+	margin-left: 0;
+	padding-left: 1em;
+}
+dd > b {
+	display: flex;
+	justify-content: space-between;
+}
+dd > p,
+dd > ul {
+	margin: 0;
+	font-size: 87.5%;
+}
+dd > ul {
+	margin-top: .25em;
+	padding-top: .25em;
+	border-top: 1px dotted #999;
+}
+span[title] {
+	/* padding: 0 0 0 1em */
+}
+</style>
+<div lang="ja">
+	<header>
+		<h1>年表デモ</h1>
+		<p>やっつけ。内容は2010年〜2011年あたりの年表より抜粋。</p>
+		<details open>
+			<summary>凡例（できごとのジャンル）</summary>
+			<ul>
+				<li>[J]…ジャズ</li>
+				<li>[R]…ロック</li>
+				<li>[P]…ポップス</li>
+				<li>[B]…ブルース</li>
+				<li>[H]…ハードコア</li>
+				<li>[A]…アコースティック</li>
+				<li>[M]…多ジャンル</li>
+				<li>[O]…その他</li>
+			</ul>
+		</details>
+	</header>
+	<main>
+		<div>
+			<h2><span>2011</span></h2>
+			<dl>
+				<dt>10/30</dt>
+				<dd>
+					<b>赤れんがフェスタin舞鶴2011 Jazz Cafe <span title="ジャズ">[J]</span></b>
+					<ul>
+						<li>出演: 舞鶴JAZZユニット　若丹即興楽団　プロシード　スイングメイツ オーケストラ　YTK Trio with高山みちお</li>
+					</ul>
+				</dd>
+				<dt>10/29</dt>
+				<dd>
+					<b>赤れんがフェスタin舞鶴2011 Jazz Bar <span title="ジャズ">[J]</span></b>
+					<ul>
+						<li>出演: Felice　GEBOKIN SE　上野山雅司カルテット　同志社大学ザ・ハード・オーケストラ</li>
+					</ul>
+				</dd>
+				<dt>9/4</dt>
+				<dd>
+					<b>赤煉瓦サマージャズ＋in舞鶴スタート <span title="ジャズ">[J]</span></b>
+					<p>※現赤れんがSummerJazz+</p>
+				</dd>
+				<dt>7/17</dt>
+				<dd>
+					<b>LIGHT FUTURE+LEAKAGE presents野外ROCK Fes &quot;Summer Riot 2011&quot; <span title="ロック">[R]</span></b>
+				</dd>
+				<dt>5/8</dt>
+				<dd>
+					<b>DON'T KILL THE BLUESスタート <span title="ブルース">[B]</span></b>
+					<p>POP増田さん主催</p>
+				</dd>
+			</dl>
+		</div>
+		<div>
+			<h2><span>2010</span></h2>
+			<dl>
+				<dt>11/30</dt>
+				<dd>
+					<b>G-ground設立 <span title="その他">[O]</span></b>
+					<p>音楽制作スタジオ</p>
+				</dd>
+				<dt>&nbsp;</dt>
+				<dd>
+					<b>ジャズ＆オカリナコンサート in市政記念館 <span title="ジャズ">[J]</span></b>
+					<ul>
+						<li>出演: 明田川荘乏　林栄一　津村和彦　若狭オカリナオールスターズ</li>
+					</ul>
+				</dd>
+				<dt>10/16</dt>
+				<dd>
+					<b>赤れんがArt＆Craft Festa 夜ジャズ <span title="ジャズ">[J]</span></b>
+					<ul>
+						<li>出演: T.K.Quartet　GEBOKIN Special Edition　安達カルテット　やまじまんグループ</li>
+					</ul>
+				</dd>
+				<dt>8/7, 8</dt>
+				<dd>
+					<b>舞鶴赤煉瓦ジャズ祭2010 <span title="ジャズ">[J]</span></b>
+					<p><strong>※20回記念で終了</strong></p>
+				</dd>
+				<dt>5/16</dt>
+				<dd>
+					<b>智恵蔵 Music Cafe <span title="ジャズ">[J]</span></b>
+					<ul>
+						<li>出演: 今井達也　Jeffrey Francesco Elektric Band　JAZZ Quintet　GEBOKIN Special Session</li>
+					</ul>
+				</dd>
+				<dt>1/31</dt>
+				<dd>
+					<b>赤煉瓦Jazz Night vol.17 TK Session <span title="ジャズ">[J]</span></b>
+					<ul>
+						<li>出演: 高橋明弘(d)　高山みちお(sax)　GEBO(g)　Yukari(p)　バーズアイ(b)</li>
+					</ul>
+				</dd>
+				<dt>1/11</dt>
+				<dd>
+					<b>舞鶴Sound Talk in 智恵蔵 <span title="アコースティック">[A]</span></b>
+					<p>9/5にはvol.2も</p>
+					<ul>
+						<li>出演: OFFSHORE　RIKA　山森伊織　たにやん　まれびとwith百姓大王</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</main>
+</div>
